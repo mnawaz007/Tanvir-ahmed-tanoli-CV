@@ -23,6 +23,22 @@
             color: #2c3e50;
             border-bottom: 1px solid #bdc3c7;
         }
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+        .header-content {
+            flex-grow: 1;
+        }
         .contact-info {
             display: flex;
             justify-content: space-between;
@@ -44,12 +60,17 @@
 </head>
 <body>
     <header class="section">
-        <h1><i>Tanveer Ahmed</i> </h1>
-        <div class="contact-info">
-            <p>📧 tanveerahmed@gmail.com</p>
-            <p>📱 <b> +92 3349428233 </b></p>
-            <p>📍 Talhala Khurd, Tehsil Haripur, KPK, Pakistan</p>
-            <p>🔗 linkedin.com/in/tanveerahmedtanoli</p>
+        <div class="header-container">
+            <img src="./cvimage.jpeg" alt="Tanveer Ahmed" class="profile-image">
+            <div class="header-content">
+                <h1><i>Tanveer Ahmed</i> </h1>
+                <div class="contact-info">
+                    <p>📧 tanveerahmed@gmail.com</p>
+                    <p>📱 <b> +92 3349428233 </b></p>
+                    <p>📍 Talhala Khurd, Tehsil Haripur, KPK, Pakistan</p>
+                    <p>🔗 linkedin.com/in/tanveerahmedtanoli</p>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -146,8 +167,5 @@
         </ul>
     </section>
 
-   
-
 </body>
 </html>
-
